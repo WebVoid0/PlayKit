@@ -3,7 +3,7 @@
    "short_name": "PlayKit",
    "icons": [
      {
-      "src": "/Icons/app.png",
+      "src": "Icons/app.png",
       "sizes": "540x540",
       "type": "image/png"
      }
