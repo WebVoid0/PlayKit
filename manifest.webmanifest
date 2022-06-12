@@ -1,7 +1,6 @@
 {
    "name": "PlayKit",
    "short_name": "PlayKit",
-   "description": "",
    "icons": [
      {
       "src": "/Icons/app.png",
@@ -9,6 +8,6 @@
       "type": "image/png"
      }
    ],
-   "display": "fullscreen",
+   "display": "standalone",
    "background-color": "#ffffff"
 }
