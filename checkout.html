@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="#ffffff">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="manifest" href="manifest.webmanifest">
+   <title>Checkout - PlayKit</title>
+</head>
+<body class="overflow-hidden">
+   
+   <a href="javascript:history.back()"><img src="/Icons/back.svg" alt="Back" class="w-10 h-10 m-5"></a>
+
+   <div class="bg-gray-100 text-gray-600 text-2xl font-semibold text-center rounded-b-xl border border-gray-200 w-52 p-6 mx-auto -mt-20">Tap to Pay<img src="/Icons/card.svg" class="w-20 h-20 mx-auto mt-5"></div>
+
+   <div class="bg-gray-100 rounded-xl border border-gray-200 w-52 p-6 mx-auto mt-14">
+      <div class="text-gray-600 text-2xl font-semibold">Items</div>
+      <ol class="divide-y divide-gray-300 mt-3">
+         <li class="text-gray-500 text-lg font-semibold"><Input type="text" class="text-gray-500 text-lg font-semibold w-40 bg-transparent" placeholder="Item 1"></Input></li>
+         <li class="text-gray-500 text-lg font-semibold"><Input type="text" class="text-gray-500 text-lg font-semibold w-40 bg-transparent" placeholder="Item 2"></Input></li>
+      </ol>
+   </div>
+
+   <div>
+      <audio id="purchase"><source src="/Sounds/Funk.aiff" type="audio/aiff"></audio>
+      <a href="javascript:setTimeout(()=>{window.location = 'index.html' },500);"><button class="mx-auto w-52 h-10 mt-14 ml-[103px] text-white bg-blue-500 rounded-lg" onclick="playAudio()">Confirm</button></a>
+   </div>
+
+   <script>
+      var x = document.getElementById("purchase"); 
+      
+      function playAudio() { 
+        x.play(); 
+      } 
+      </script>
+</body>
+</html>
